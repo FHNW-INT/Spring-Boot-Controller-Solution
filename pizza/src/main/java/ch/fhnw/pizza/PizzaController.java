@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PizzaController {
     
     @GetMapping(path="/{id}", produces = "application/json")
-    public Pizza getPizza(@PathVariable("id") Long id) {
+    public Pizza getPizza(@PathVariable Long id) {
         return new Pizza();
     }
 
